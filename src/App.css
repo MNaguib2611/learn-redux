@@ -1,38 +1,29 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.row {
+  display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 10px;
+  height: 100vh;
+  /* Should be removed. Only for demonstration */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.left-div {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.column-left {
+  flex: 50%;
+  height: 50vh;
+  padding: 10px;
+  border: 0.1px solid black;
+  overflow-y: scroll;
 }

@@ -1,24 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import CompanyList from './features/company/CompanyList';
+import CompanyForm from './features/company/CompanyForm';
+import Profile from './features/profile/Profile';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="row" >
+
+      <div className="column left-div" style={{ backgroundColor: "#bbb" }}>
+        <div className='column-left '>
+          <h2>profile</h2>
+          <Profile />
+        </div>
+        <div className='column-left '>
+          <h2>devices</h2>
+          <p>Some text..</p>
+        </div>
+      </div >
+
+      <div className="column left-div" style={{ backgroundColor: "#aaa" }} >
+        <div className='column-left '>
+          <CompanyList />
+        </div>
+        <div className='column-left '>
+          <CompanyForm />
+        </div>
+
+      </div >
+
+
+    </div >
   );
 }
 

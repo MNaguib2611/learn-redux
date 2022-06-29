@@ -1,6 +1,6 @@
 import './Company.module.css';
 import { FiTrash2, FiEdit } from 'react-icons/fi';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { removeCompany, changeEditCompany } from './companySlice';
 
 function Company({ company }) {

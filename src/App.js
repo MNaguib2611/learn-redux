@@ -2,6 +2,7 @@ import './App.css';
 import CompanyList from './features/company/CompanyList';
 import CompanyForm from './features/company/CompanyForm';
 import Profile from './features/profile/Profile';
+import DeviceList from './features/device/DeviceList';
 
 function App() {
   return (
@@ -13,8 +14,7 @@ function App() {
           <Profile />
         </div>
         <div className='column-left '>
-          <h2>devices</h2>
-          <p>Some text..</p>
+          <DeviceList />
         </div>
       </div >
 
